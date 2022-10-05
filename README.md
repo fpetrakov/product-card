@@ -1,2 +1,1 @@
-# product-card
-just for mentoring purposes
+# just for mentoring purposes
