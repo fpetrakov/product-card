@@ -1,0 +1,70 @@
+:root {
+	--clr-accent: hsl(158, 36%, 37%);
+	--clr-background: hsl(30, 38%, 92%);
+	--clr-text: hsl(212, 21%, 14%);
+	--dark-text-light: hsl(228, 12%, 48%);
+	--clr-surface: hsl(0, 0%, 100%);
+
+	--fs: 14px;
+
+	--fw-bold: 700;
+	--fw-medium: 500;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body,
+main {
+	height: 100%;
+}
+
+body {
+	font-size: var(--fs);
+	font-family: "Montserrat", sans-serif;
+	font-weight: var(--fw-medium);
+	color: var(--clr-text);
+	background-color: var(--clr-background);
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.product {
+	max-width: 600px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	background-color: var(--clr-surface);
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.product__info {
+	padding: 30px;
+}
+
+.button {
+	border: none;
+	background-color: var(--clr-accent);
+}
+
+.button:hover {
+}
+
+.button:active {
+	transform: translateY(2px);
+}
